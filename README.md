@@ -11,6 +11,12 @@
 
 crud admin is administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
 
+## Installation
+
+```
+composer create-project muhlisabdi/crud-admin blog
+```
+
 
 
 ## License
