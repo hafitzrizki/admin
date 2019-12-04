@@ -49,7 +49,12 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "providers": [
+                "Barryvdh\\Debugbar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
         }
     },
     "autoload": {
@@ -75,12 +80,6 @@
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "pre-install-cmd": [
-            "@php artisan vendor:publish --provider=\"Encore\\Admin\\AdminServiceProvider\""
-        ],
-        "post-install-cmd": [
-            "@php artisan admin:import helpers"
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
