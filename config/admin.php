@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'SKM - Admin',
+    'name' => 'Laravel-admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>SKM</b> Admin',
+    'logo' => '<b>Laravel</b> admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>SKM</b>',
+    'logo-mini' => '<b>La</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -124,7 +124,7 @@ return [
         'providers' => [
             'admin' => [
                 'driver' => 'eloquent',
-                'model'  => App\Admin\Models\Pengguna::class,
+                'model'  => Encore\Admin\Auth\Database\Administrator::class,
             ],
         ],
 
@@ -138,6 +138,7 @@ return [
         'excepts' => [
             'auth/login',
             'auth/logout',
+            '_handle_action_',
         ],
     ],
 
@@ -177,7 +178,7 @@ return [
 
         // User tables and model.
         'users_table' => 'admin_users',
-        'users_model' => App\Admin\Models\Pengguna::class,
+        'users_model' => Encore\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'admin_roles',
@@ -209,7 +210,7 @@ return [
     */
     'operation_log' => [
 
-        'enable' => false,
+        'enable' => true,
 
         /*
          * Only logging allowed methods in the list
@@ -289,7 +290,7 @@ return [
     | "sidebar-mini".
     |
     */
-    'layout' => ['sidebar-mini'],
+    'layout' => ['sidebar-mini', 'sidebar-collapse'],
 
     /*
     |--------------------------------------------------------------------------
@@ -310,7 +311,7 @@ return [
     | each page
     |
     */
-    'show_version' => false,
+    'show_version' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -395,21 +396,6 @@ return [
     |
     */
     'extensions' => [
-        'data-table' => [
-            // If the value is set to false, this extension will be disabled
-            'enable' => true,
-            // global options
-            'options' => [
-                'paging'       => true,
-                'lengthChange' => true,
-                'searching'    => true,
-                'ordering'     => true,
-                'info'         => true,
-                'responsive'   => true,
-                'dom'          => 'Bfrtip',
-                'fixedHeader'  => true,
-                'language'     => 'Indonesian',
-            ],
-        ],
-            ],
-        ];
+
+    ],
+];
