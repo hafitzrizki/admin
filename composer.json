@@ -19,7 +19,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/muhlisabdi/laravel-admin"
+            "url": "https://github.com/muhlisabdi/laravel-admin/tree/simplify-for-boilerplate"
         }
     ],
     "require": {
