@@ -8,7 +8,7 @@ use Laravel\BrowserKitTesting\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
-    protected $baseUrl = 'http://localhost:8000';
+    protected $baseUrl = 'http://localhost';
 
     /**
      * Boots the application.
