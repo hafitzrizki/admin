@@ -1,6 +1,7 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
+<a href="https://github.styleci.io/repos/225842258"><img src="https://github.styleci.io/repos/225842258/shield?branch=master" alt="StyleCI"></a>
 <a href="https://travis-ci.org/muhlisabdi/crud-admin"><img src="https://travis-ci.org/muhlisabdi/crud-admin.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/muhlisabdi/crud-admin"><img src="https://poser.pugx.org/muhlisabdi/crud-admin/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/muhlisabdi/crud-admin"><img src="https://poser.pugx.org/muhlisabdi/crud-admin/v/stable.svg" alt="Latest Stable Version"></a>
