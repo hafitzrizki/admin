@@ -78,7 +78,7 @@
             "tests/TestCase.php"
         ]
     },
-      "minimum-stability": "dev",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
@@ -91,6 +91,6 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "test": "./vendor/bin/phpunit"
+        "test": "phpunit"
     }
 }
