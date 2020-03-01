@@ -111,18 +111,18 @@ class PermissionsTest extends TestCase
 
         $this->visit('admin/auth/users/2/edit')
             ->see('Edit')
-            ->submitForm('Submit', ['permissions' => [6]])
+            ->submitForm('Submit', ['permissions' => [7]])
             ->seePageIs('admin/auth/users')
-            ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 6]);
+            ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7]);
 
         $this->assertTrue(Administrator::find(2)->can('can-update'));
         $this->assertTrue(Administrator::find(2)->cannot('can-remove'));
 
         $this->visit('admin/auth/users/2/edit')
             ->see('Edit')
-            ->submitForm('Submit', ['permissions' => [7]])
+            ->submitForm('Submit', ['permissions' => [8]])
             ->seePageIs('admin/auth/users')
-            ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7]);
+            ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 8]);
 
         $this->assertTrue(Administrator::find(2)->can('can-remove'));
 
@@ -130,8 +130,8 @@ class PermissionsTest extends TestCase
             ->see('Edit')
             ->submitForm('Submit', ['permissions' => []])
             ->seePageIs('admin/auth/users')
-            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 6])
-            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7]);
+            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7])
+            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 8]);
 
         $this->assertTrue(Administrator::find(2)->cannot('can-update'));
         $this->assertTrue(Administrator::find(2)->cannot('can-remove'));
@@ -187,9 +187,9 @@ class PermissionsTest extends TestCase
         // 5.assign permission to role
         $this->visit('admin/auth/roles/2/edit')
             ->see('Edit')
-            ->submitForm('Submit', ['permissions' => [6]])
+            ->submitForm('Submit', ['permissions' => [7]])
             ->seePageIs('admin/auth/roles')
-            ->seeInDatabase(config('admin.database.role_permissions_table'), ['role_id' => 2, 'permission_id' => 6]);
+            ->seeInDatabase(config('admin.database.role_permissions_table'), ['role_id' => 2, 'permission_id' => 7]);
 
         $this->assertTrue(Administrator::find(2)->can('can-remove'));
     }
