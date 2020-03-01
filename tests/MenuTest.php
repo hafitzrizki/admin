@@ -56,7 +56,7 @@ class MenuTest extends TestCase
             ->submitForm('Submit', ['title' => 'blablabla'])
             ->seePageIs('admin/auth/menu')
             ->seeInDatabase(config('admin.database.menu_table'), ['title' => 'blablabla'])
-            ->assertEquals(8, Menu::count());
+            ->assertEquals(12, Menu::count());
     }
 
     public function testShowPage()
