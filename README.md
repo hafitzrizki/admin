@@ -24,6 +24,9 @@ Update .env file based on your configuration
 php artisan admin:install
 ```
 
+## Documantation
+
+https://muhlisabdi.github.io/Laravel-admin-docs
 
 
 ## License
