@@ -24,11 +24,16 @@
         {
             "type": "vcs",
             "url": "https://github.com/muhlisabdi/helpers"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/muhlisabdi/multi-language"
         }
     ],
     "require": {
         "php": "^7.2",
         "encore/laravel-admin": "dev-simplify-for-boilerplate",
+        "laravel-admin-extensions/multi-language": "dev-master",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0"
