@@ -1,12 +1,10 @@
 ![Logo](https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg)
 
 [![StyleCI](https://github.styleci.io/repos/225842258/shield?branch=master)](https://github.styleci.io/repos/225842258)
-<a href="https://travis-ci.org/muhlisabdi/crud-admin"><img src="https://travis-ci.org/muhlisabdi/crud-admin.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/muhlisabdi/crud-admin"><img src="https://poser.pugx.org/muhlisabdi/crud-admin/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/muhlisabdi/crud-admin"><img src="https://poser.pugx.org/muhlisabdi/crud-admin/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/muhlisabdi/crud-admin"><img src="https://poser.pugx.org/muhlisabdi/crud-admin/license.svg" alt="License"></a>
-</p>
-
+[![Latest Stable Version](https://poser.pugx.org/laradvance/admin/v/stable)](https://packagist.org/packages/laradvance/admin)
+[![Latest Unstable Version](https://poser.pugx.org/laradvance/admin/v/unstable)](https://packagist.org/packages/laradvance/admin)
+[![Total Downloads](https://poser.pugx.org/laradvance/admin/downloads)](https://packagist.org/packages/laradvance/admin)
+[![License](https://poser.pugx.org/laradvance/admin/license)](https://packagist.org/packages/laradvance/admin)
 ## About crud-admin
 
 crud admin is administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
