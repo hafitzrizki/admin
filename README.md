@@ -1,4 +1,4 @@
-![Logo](https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg=400)
+![Logo](https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg=400x)
 
 [![StyleCI](https://github.styleci.io/repos/225842258/shield?branch=master)](https://github.styleci.io/repos/225842258)
 [![Latest Stable Version](https://poser.pugx.org/laradvance/admin/v/stable?format=flat-square)](https://packagist.org/packages/laradvance/admin)
