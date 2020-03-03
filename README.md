@@ -1,4 +1,4 @@
-![Logo](https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg=400x)
+# Laradvance Admin
 
 [![StyleCI](https://github.styleci.io/repos/225842258/shield?branch=master)](https://github.styleci.io/repos/225842258)
 [![Latest Stable Version](https://poser.pugx.org/laradvance/admin/v/stable?format=flat-square)](https://packagist.org/packages/laradvance/admin)
@@ -6,7 +6,7 @@
 [![Total Downloads](https://poser.pugx.org/laradvance/admin/downloads?format=flat-square)](https://packagist.org/packages/laradvance/admin)
 [![License](https://poser.pugx.org/laradvance/admin/license?format=flat-square)](https://packagist.org/packages/laradvance/admin)
 
-## About crud-admin
+## About Laradvance Admin
 
 crud admin is administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
 
