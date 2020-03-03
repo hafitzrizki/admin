@@ -1,5 +1,5 @@
 {
-    "name": "muhlisabdi/crud-admin",
+    "name": "laradvance/admin",
     "type": "project",
     "description": "The Admin CRUD Generator based on Laravel Framework.",
     "keywords": [
@@ -9,7 +9,7 @@
         "crud"
     ],
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "authors": [
         {
             "name": "muhlisabdi",
@@ -19,15 +19,15 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/muhlisabdi/laravel-admin"
+            "url": "https://github.com/laradvance/laravel-admin"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/muhlisabdi/helpers"
+            "url": "https://github.com/laradvance/helpers"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/muhlisabdi/multi-language"
+            "url": "https://github.com/laradvance/multi-language"
         }
     ],
     "require": {
