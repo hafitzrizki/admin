@@ -35,7 +35,7 @@
         "encore/laravel-admin": "dev-simplify-for-boilerplate",
         "laravel-admin-extensions/multi-language": "dev-master",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.2",
+        "laravel/framework": ">=5.5",
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
@@ -45,10 +45,8 @@
         "fzaninotto/faker": "^1.9.1",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
-        "symfony/css-selector": "~4.0",
         "intervention/image": "~2.3",
-        "laravel/browser-kit-testing": "~5.1",
-        "phpunit/phpunit": "^8.0"
+        "laravel/browser-kit-testing": "^6.0"
     },
     "config": {
         "optimize-autoloader": true,
