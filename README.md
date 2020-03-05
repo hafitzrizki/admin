@@ -11,6 +11,8 @@
 
 crud admin is administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
 
+Based on package encore/laravel-admin by z-song
+
 ## Installation
 
 ```
