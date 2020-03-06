@@ -21,7 +21,7 @@
         "laradvance/admin-core": "dev-master",
         "laradvance/admin-language": "dev-master",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.2",
+        "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
