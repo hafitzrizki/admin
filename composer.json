@@ -32,7 +32,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "encore/laravel-admin": "dev-simplify-for-boilerplate",
+        "encore/laravel-admin": "dev-master",
         "laravel-admin-extensions/multi-language": "dev-master",
         "fideloper/proxy": "^4.0",
         "laravel/framework": ">=5.5",
