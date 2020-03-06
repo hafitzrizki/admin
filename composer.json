@@ -35,7 +35,7 @@
         "encore/laravel-admin": "dev-master",
         "laravel-admin-extensions/multi-language": "dev-master",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": ">=5.5",
+        "laravel/framework": ">=5.5 <8.0",
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
