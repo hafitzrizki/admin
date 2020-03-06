@@ -33,7 +33,7 @@
         "nunomaduro/collision": "^3.0",
         "symfony/css-selector": "~4.0",
         "intervention/image": "~2.3",
-        "laravel/browser-kit-testing": "~5.1",
+        "laravel/browser-kit-testing": "^6.0",
         "phpunit/phpunit": "^8.0"
     },
     "config": {
