@@ -16,30 +16,16 @@
             "email": "muhlisabdi@gmail.com.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/laradvance/laravel-admin"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laradvance/helpers"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laradvance/multi-language"
-        }
-    ],
     "require": {
         "php": "^7.2",
-        "encore/laravel-admin": "dev-simplify-for-boilerplate",
-        "laravel-admin-extensions/multi-language": "dev-master",
+        "laradvance/admin-core": "dev-master",
+        "laradvance/admin-language": "dev-master",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
-        "laravel-admin-ext/helpers": "dev-master",
+        "laradvance/admin-helpers": "dev-master",
         "barryvdh/laravel-debugbar": "^3.2",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.9.1",
