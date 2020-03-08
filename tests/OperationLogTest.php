@@ -5,7 +5,7 @@ use Encore\Admin\Auth\Database\OperationLog;
 
 class OperationLogTest extends TestCase
 {
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
