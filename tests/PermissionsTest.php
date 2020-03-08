@@ -38,10 +38,10 @@ class PermissionsTest extends TestCase
         $this->assertTrue(Administrator::first()->can('can-edit'));
         $this->assertTrue(Administrator::first()->can('can-delete'));
 
-        $this->delete('admin/auth/permissions/8')
+        $this->delete('admin/auth/permissions/7')
             ->assertEquals(7, Permission::count());
 
-        $this->delete('admin/auth/permissions/7')
+        $this->delete('admin/auth/permissions/8')
             ->assertEquals(6, Permission::count());
     }
 
@@ -107,16 +107,7 @@ class PermissionsTest extends TestCase
             ->submitForm('Submit', ['slug' => 'can-remove', 'name' => 'Can Remove', 'http_path' => 'users/*', 'http_method' => ['DELETE']])
             ->seePageIs('admin/auth/permissions');
 
-        $this->assertEquals(7, Permission::count());
-
-        $this->visit('admin/auth/users/2/edit')
-            ->see('Edit')
-            ->submitForm('Submit', ['permissions' => [6]])
-            ->seePageIs('admin/auth/users')
-            ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 6]);
-
-        $this->assertTrue(Administrator::find(2)->can('can-update'));
-        $this->assertTrue(Administrator::find(2)->cannot('can-remove'));
+        $this->assertEquals(8, Permission::count());
 
         $this->visit('admin/auth/users/2/edit')
             ->see('Edit')
@@ -124,14 +115,23 @@ class PermissionsTest extends TestCase
             ->seePageIs('admin/auth/users')
             ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7]);
 
+        $this->assertTrue(Administrator::find(2)->can('can-update'));
+        $this->assertTrue(Administrator::find(2)->cannot('can-remove'));
+
+        $this->visit('admin/auth/users/2/edit')
+            ->see('Edit')
+            ->submitForm('Submit', ['permissions' => [8]])
+            ->seePageIs('admin/auth/users')
+            ->seeInDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 8]);
+
         $this->assertTrue(Administrator::find(2)->can('can-remove'));
 
         $this->visit('admin/auth/users/2/edit')
             ->see('Edit')
             ->submitForm('Submit', ['permissions' => []])
             ->seePageIs('admin/auth/users')
-            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 6])
-            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7]);
+            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 7])
+            ->missingFromDatabase(config('admin.database.user_permissions_table'), ['user_id' => 2, 'permission_id' => 8]);
 
         $this->assertTrue(Administrator::find(2)->cannot('can-update'));
         $this->assertTrue(Administrator::find(2)->cannot('can-remove'));
