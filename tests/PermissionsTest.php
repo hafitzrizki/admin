@@ -41,7 +41,7 @@ class PermissionsTest extends TestCase
         $this->delete('admin/auth/permissions/8')
             ->assertEquals(7, Permission::count());
 
-        $this->delete('admin/auth/permissions/8')
+        $this->delete('admin/auth/permissions/7')
             ->assertEquals(6, Permission::count());
     }
 
