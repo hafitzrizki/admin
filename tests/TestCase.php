@@ -17,7 +17,7 @@ class TestCase extends BaseTestCase
      */
     public function createApplication()
     {
-        $app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
+        $app = require __DIR__.'/../bootstrap/app.php';
 
         $app->booting(function () {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
