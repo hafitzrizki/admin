@@ -9,7 +9,7 @@
 
 ## About Laradvance Admin
 
-crud admin is administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
+Laradvance Admin is an administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
 
 Based on package encore/laravel-admin by z-song
 
