@@ -19,11 +19,13 @@ Based on package encore/laravel-admin by z-song
 composer create-project laradvance/admin
 ```
 
-Update .env file based on your configuration
+Update `.env` file based on your configuration
 
 ```
 php artisan admin:install
 ```
+
+Open `http://localhost/admin/` in browser,use username `admin` and password `admin` to login.
 
 ## Documentation
 
