@@ -211,7 +211,7 @@ return [
     */
     'operation_log' => [
 
-        'enable' => true,
+        'enable' => false,
 
         /*
          * Only logging allowed methods in the list
