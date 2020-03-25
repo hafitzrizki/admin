@@ -72,7 +72,7 @@ return [
     'operation_log'         => 'Riwayat Kegiatan',
     'parent_select_error'   => 'Kesalahan pemilihan induk',
     'pagination'            => [
-        'range' => 'Menampilkan :first dari :last dari :total masukan',
+        'range' => 'Menampilkan :first sampai dengan :last dari :total masukan',
     ],
     'role'                  => 'Aturan',
     'permission'            => 'Hak akses',
